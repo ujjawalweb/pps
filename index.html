@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+
+</style>
+
+</head>
+<body>
+    
+    <div class="header">
+<div class="bt">
+<button class="btn1" onclick="openForm()">Caseout</button>&nbsp; &nbsp;
+
+</div>
+    </div>
+
+<div class="bannner">
+    <img src="images/cas.jpg">
+</div>
+
+
+    <div class="form-popup" id="myForm">
+    <div class="widget-container">
+        <div class="top-nav" style="background:#ebebed;">
+          <div class="left-nav">
+            <div class="back-arrow">
+              <svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                <polyline id="Path-2" stroke="#2EC4FE" stroke-width="2" points="8.99665918 16 1.48001099 8.48335181 8.98002946 0.983333333"></polyline>
+              </g>
+              </svg>
+            </div>
+            <div class="nav-text" style="color:#000;margin-top: -2px;">
+              Withdraw
+            </div>
+          </div>
+      <div class="close-x">
+        <svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+         <g id="Group" transform="translate(1.000000, 1.000000)" stroke="#777" stroke-width="2">
+             <path d="M0,12.7279221 L12.7279221,0" id="Path"></path>
+             <path d="M0,12.7279221 L12.7279221,0" id="Path" transform="translate(6.363961, 6.363961) scale(1, -1) translate(-6.363961, -6.363961) "></path>
+         </g>
+     </g>
+ </svg>
+      </div>
+    </div>
+    <h1>  Available  Balance :<span class="rup"> Rs 1.44</span></h1>     
+    <form action="#">
+      <div class="inputs">
+     
+        <input type="text"  class="put cursor-center" name="name" placeholder="Enter amount">
+    
+        
+
+        
+      </div>
+
+
+     
+
+
+       <span class="min" style="white-space: nowrap;
+       position: relative;
+       top: -30px;
+       left: -61px;
+       font-weight: 600;
+       color:#8c8989;
+       font-size: 11px;
+   ">Min 0 - Max 0</span>
+   
+   
+
+      <div class="nav-text mts">
+         Withdrawal methods
+       </div>
+
+
+       <div class="container">
+           <div class="row rws">
+           <div class="col-md-12"> <img src="images/py.png" width="30" class="pays" > &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;<span class="tit tak">Paytm </span> <p class="num">+919694039777</p><p class="para">Instant Payout and paytm KYC is mandatory <span class="mand">for withdrawing</span></p> <input type="radio" class="rad"></div> 
+           <div class="col-md-12 two"> <img src="images/a.png" width="30"class="amaz" > &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;<span class="tit">Amazon Pay </span> <p class="num">+919694039777<span class="edit">Edit</span></p> <p class="para">Instant Payout </p> <input type="radio" class="red"></div> 
+           <div class="col-md-12 three"> <img src="images/u.png" width="30" class="up" > &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;<span class="tit2">UPI </span>  <p class="para2">Settlement may take up 3 working days </p> <span class="link">Linked Account</span> </div> 
+           <div class="col-md-12 four"> <img src="images/b.png" width="20" class="banks"> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;<span class="tit2">Bank Account</span>   <p class="para3">Settlement may take up 3 working days </p> <span class="link lnk">Linked Account</span>  </div> 
+           </div>
+       </div>
+      
+      <input class="btn_style" type="submit" value="Withdraw"> 
+     </form>
+   </div>
+    </div>
+
+
+   
+
+
+
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+
+
+<script>
+    $(document).ready(function(){
+      $(".close-x").click(function(){
+        $("#myForm").css("display", "none");
+      });
+    });
+    </script>
+
+<script>
+    function validate(evt) {
+var theEvent = evt || window.event;
+var key = theEvent.keyCode || theEvent.which;
+key = String.fromCharCode( key );
+var regex = /[0-9]|\./;
+if( !regex.test(key) ) {
+theEvent.returnValue = false;
+if(theEvent.preventDefault) theEvent.preventDefault();
+}
+}
+</script>
+</body>
+</html>
